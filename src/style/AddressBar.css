@@ -1,0 +1,96 @@
+.address-bar-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 60%;
+    min-width: 150px;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.address-bar {
+  flex: 1;
+  height: 32px;
+  min-height: 32px;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid #dadce0;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.url-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: clamp(12px, 1.5vw, 14px);
+  padding: 0 8px;
+  color: #333;
+  min-width: 50px;
+}
+
+.url-input::placeholder {
+  color: #999;
+}
+
+.security-icon {
+  color: #5f6368;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.address-bar-icons {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #5f6368;
+  flex-shrink: 0;
+}
+
+.icon-button:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+}
+
+@media (max-width: 768px) {
+  .address-bar-container {
+    gap: 4px;
+    max-width: 100%;
+  }
+  
+  .address-bar {
+    padding: 0 8px;
+  }
+  
+
+}
+
+@media (max-width: 480px) {
+  .address-bar-icons {
+    display: none; 
+  }
+  
+  .address-bar {
+    padding: 0 6px;
+  }
+}

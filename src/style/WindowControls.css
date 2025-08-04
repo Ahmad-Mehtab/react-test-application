@@ -1,0 +1,38 @@
+.window-controls {
+  display: flex;
+  gap: 12px;
+}
+
+.window-controls .control {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* .window-controls .minimize {
+  background-color: #ffbd2e;
+}
+
+.window-controls .maximize {
+  background-color: #28c940;
+}
+
+.window-controls .close {
+  background-color: #ff5f56;
+  color: rgba(0, 0, 0, 0.5);
+} */
+
+@media (max-width: 480px) {
+  .window-controls {
+    gap: 8px;
+  }
+}
