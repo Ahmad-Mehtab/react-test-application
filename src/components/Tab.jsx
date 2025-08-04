@@ -1,13 +1,21 @@
-import React from 'react';
-import './../style/Tab.css';
+import React from "react";
+import "./../style/Tab.css";
 
-const Tab = ({ title, isActive, onClick }) => {
+const Tab = ({ label, isActive, onClose, onClick }) => {
   return (
-    <div className={`tab ${isActive ? 'active' : ''}`} onClick={onClick}>
-      <div className="tab-content">
-        <span className="tab-title">{title}</span>
-        {isActive && <div className="tab-underline"></div>}
-      </div>
+    <div 
+      className={`tab ${isActive ? "active" : ""}`} 
+      onClick={onClick}
+    >
+      <span className="tab-label">{label}</span>
+      {isActive && (
+        <button className="tab-close" onClick={(e) => {
+          e.stopPropagation(); // Prevents tab click when closing
+          onClose();
+        }}>
+          ×
+        </button>
+      )}
     </div>
   );
 };

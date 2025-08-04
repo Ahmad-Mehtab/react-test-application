@@ -1,12 +1,18 @@
-import React from 'react';
-import './../style/WindowControls.css';
+import React from "react";
+import "./../style/WindowControls.css";
 
 const WindowControls = () => {
   return (
     <div className="window-controls">
-      <button className="control minimize">-</button>
-      <button className="control maximize">□</button>
-      <button className="control close">×</button>
+      <div className="minimize">
+        <button className="control">-</button>
+      </div>
+      <div className="maximize">
+        <button className="control ">□</button>
+      </div>
+      <div className="close">
+        <button className="cross">×</button>
+      </div>
     </div>
   );
 };

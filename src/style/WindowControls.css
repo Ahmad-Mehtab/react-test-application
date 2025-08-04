@@ -1,21 +1,35 @@
 .window-controls {
   display: flex;
-  gap: 12px;
+  align-items: center;     /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  gap: 8px;               /* Spacing between buttons */
+  height: 100%;           /* Ensure it takes full height of parent */
 }
 
-.window-controls .control {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  border: none;
+.window-controls > div {
   display: flex;
+  align-items: center;   /* Center button inside div */
   justify-content: center;
-  align-items: center;
-font-size: 16px;
-  cursor: pointer;
-  padding: 0;
-  line-height: 1;
-  flex-shrink: 0;
+  background: transparent;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    line-height: 1;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+.window-controls .cross {
+    background: transparent;
+    border: none;
 }
 
 /* .window-controls .minimize {
