@@ -1,12 +1,53 @@
-# React + Vite
+Overview :
+This project is a pixel-perfect implementation of a Chrome-like browser UI built with React. It was created as part of a frontend developer technical assessment, focusing on UI accuracy, component structure, and responsive design.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Chrome-like Window Interface:
 
-Currently, two official plugins are available:
+Window controls (minimize, maximize, close)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tab bar with multiple tabs
 
-## Expanding the ESLint configuration
+Address bar with navigation buttons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Responsive design for all screen sizes
+
+Interactive Elements:
+
+Tab switching functionality
+
+Hover effects on buttons and tabs
+
+Active tab indicator
+
+Responsive Design:
+
+Adapts to desktop, tablet, and mobile screens
+
+Progressive simplification on smaller devices
+
+Proper overflow handling for tabs
+
+Technologies Used
+React (Functional Components with Hooks)
+
+CSS (Plain CSS with responsive media queries)
+
+React Icons (Feather Icons)
+
+Flexbox for layout
+
+Installation
+Clone the repository:
+git clone https://github.com/your-username/chrome-ui-react.git
+cd chrome-ui-react
+Install dependencies: npm install
+npm start
+Responsive Breakpoints
+The UI adapts at these breakpoints:
+
+Desktop (≥ 769px): Full Chrome-like interface
+
+Tablet (481px-768px): Simplified navigation, adjusted spacing
+
+Mobile (≤ 480px): Minimal interface, essential elements only
