@@ -1,4 +1,4 @@
-Overview
+Overview :
 This project is a pixel-perfect implementation of a Chrome-like browser UI built with React. It was created as part of a frontend developer technical assessment, focusing on UI accuracy, component structure, and responsive design.
 
 Features
